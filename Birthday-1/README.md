@@ -7,18 +7,18 @@ A premium, fully animated, romantic, modern, and interactive birthday website bu
 ## 🌟 Highlights & Features
 
 - **🎁 Opening Screen Surprise:**
-  - Full-screen animated curtain with *"✨ A Special Surprise Awaits You ✨"*
-  - *"🎁 Open Your Birthday Surprise"* animated button with confetti burst, sound fanfare, and smooth transition.
+  - Full-screen animated curtain with _"✨ A Special Surprise Awaits You ✨"_
+  - _"🎁 Open Your Birthday Surprise"_ animated button with confetti burst, sound fanfare, and smooth transition.
   - Automatic music start upon first interaction (adheres to browser autoplay policies).
 
 - **🎂 Hero Section:**
-  - Shimmering gradient animated heading: *"🎂 Happy Birthday, [NAME]! 🎉"*
-  - Subtitle: *"Today is all about celebrating YOU! ❤️"*
+  - Shimmering gradient animated heading: _"🎂 Happy Birthday, [NAME]! 🎉"_
+  - Subtitle: _"Today is all about celebrating YOU! ❤️"_
   - Centerpiece multi-tier birthday cake with animated flickering flames, sparklers, and floating balloons.
   - Interactive click-to-celebrate confetti triggers.
 
 - **💌 Typewriter Birthday Letter:**
-  - Glassmorphism card titled *"To Someone Truly Special ❤️"*
+  - Glassmorphism card titled _"To Someone Truly Special ❤️"_
   - Smooth character-by-character typewriter animation that begins when scrolled into view.
   - Controls to replay the typewriter animation or skip to full text.
   - Wax seal emblem with glowing heart.
@@ -29,19 +29,19 @@ A premium, fully animated, romantic, modern, and interactive birthday website bu
   - Like button with confetti burst.
   - Option to upload and swap custom photos directly from the browser.
   - Captions:
-    - *"A beautiful moment ❤️"*
-    - *"Memories to treasure ✨"*
-    - *"That unforgettable smile 😊"*
-    - *"Forever special 💕"*
-    - *"Good times, great memories 🎉"*
-    - *"Moments that matter ❤️"*
+    - _"A beautiful moment ❤️"_
+    - _"Memories to treasure ✨"_
+    - _"That unforgettable smile 😊"_
+    - _"Forever special 💕"_
+    - _"Good times, great memories 🎉"_
+    - _"Moments that matter ❤️"_
 
 - **🕯️ Interactive Birthday Cake & Wish:**
-  - *"Make a Wish 🎂✨"*
+  - _"Make a Wish 🎂✨"_
   - Animated multi-tier cake with realistic candle flames.
-  - Tap individual candles or click *"Blow the Candles 🕯️"*.
-  - Realistic smoke wisps ascend, screen briefly flashes with golden aurora glow, confetti explodes, and reveals: *"🎉 Wish Made! May It Come True! ✨"*.
-  - *"Relight Candles 🕯️"* button to make another wish anytime!
+  - Tap individual candles or click _"Blow the Candles 🕯️"_.
+  - Realistic smoke wisps ascend, screen briefly flashes with golden aurora glow, confetti explodes, and reveals: _"🎉 Wish Made! May It Come True! ✨"_.
+  - _"Relight Candles 🕯️"_ button to make another wish anytime!
 
 - **💖 Why You're So Special:**
   - 6 glassmorphic tribute cards that animate upward into viewport:
@@ -53,15 +53,15 @@ A premium, fully animated, romantic, modern, and interactive birthday website bu
     - 🎀 Simply Being You
 
 - **⏳ Countdown Timer:**
-  - *"Until The Next Celebration 🎉"*
+  - _"Until The Next Celebration 🎉"_
   - Days | Hours | Minutes | Seconds with animated number transitions.
 
 - **🎆 Grand Finale Surprise:**
-  - *"One Last Surprise... 🎁"*
-  - Clicking *"✨ Reveal Your Surprise ✨"* triggers full-screen fireworks, multi-cannon confetti, heart shower, and reveals:
-    - *"HAPPY BIRTHDAY, [NAME]! 🎂🎉❤️"*
-    - *"May all your dreams come true. Keep smiling, keep shining, and make every moment count! ✨"*
-  - Interactive *"Send a Virtual Hug 🤗"* and *"More Fireworks! 🎆"* buttons.
+  - _"One Last Surprise... 🎁"_
+  - Clicking _"✨ Reveal Your Surprise ✨"_ triggers full-screen fireworks, multi-cannon confetti, heart shower, and reveals:
+    - _"HAPPY BIRTHDAY, [NAME]! 🎂🎉❤️"_
+    - _"May all your dreams come true. Keep smiling, keep shining, and make every moment count! ✨"_
+  - Interactive _"Send a Virtual Hug 🤗"_ and _"More Fireworks! 🎆"_ buttons.
 
 - **🎶 Built-in Background Music & Sound Effects:**
   - Web Audio API music box synthesizer plays gentle celesta "Happy Birthday" melody and ambient arpeggios (zero network reliance, 100% offline & zero broken links).
@@ -79,12 +79,15 @@ A premium, fully animated, romantic, modern, and interactive birthday website bu
 ## 🛠️ How to Customize the Recipient's Name
 
 ### Option 1: Directly in the UI
+
 Click the **"Name"** button on the floating top navigation bar to open the personalization modal. Type any name or select a preset and watch the entire website update in real-time!
 
 ### Option 2: In Code
+
 Open [`src/config/birthdayData.js`](file:///C:/Users/SHOUVIK%20KUMAR%20MAITY/.gemini/antigravity/scratch/birthday-wishes/src/config/birthdayData.js) and change:
+
 ```javascript
-export const DEFAULT_NAME = "Sarah"; // Change to your beloved's name
+export const DEFAULT_NAME = "Anindita"; // Change to your beloved's name
 ```
 
 ---
@@ -93,7 +96,7 @@ export const DEFAULT_NAME = "Sarah"; // Change to your beloved's name
 
 1. Navigate to the project folder:
    ```bash
-   cd "C:\Users\SHOUVIK KUMAR MAITY\.gemini\antigravity\scratch\birthday-wishes"
+   <!-- cd "C:\Users\SHOUVIK KUMAR MAITY\.gemini\antigravity\scratch\birthday-wishes" -->
    ```
 2. Start the development server:
    ```bash
