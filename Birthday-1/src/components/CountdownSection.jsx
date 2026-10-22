@@ -1,33 +1,41 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BIRTHDAY_CONFIG } from '../config/birthdayData';
-import { Clock, Calendar, Sparkles } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 export default function CountdownSection() {
   const [timeLeft, setTimeLeft] = useState({
-    days: 365,
+    days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
 
   useEffect(() => {
-    // Target next year's birthday anniversary
-    const now = new Date();
-    let target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1); // tomorrow as milestone or customized
-    // Set 365 days cycle
-    target = new Date(now.getTime() + (364 * 24 * 60 * 60 * 1000) + (14 * 60 * 60 * 1000) + (35 * 60 * 1000));
-
     const calculateTime = () => {
-      const difference = target.getTime() - new Date().getTime();
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
+      const now = new Date();
+      const configuredDate = BIRTHDAY_CONFIG.targetDate;
+      let target = new Date(
+        now.getFullYear(),
+        configuredDate.getMonth(),
+        configuredDate.getDate(),
+        configuredDate.getHours(),
+        configuredDate.getMinutes(),
+        configuredDate.getSeconds(),
+        configuredDate.getMilliseconds(),
+      );
+
+      if (target <= now) {
+        target.setFullYear(target.getFullYear() + 1);
       }
+
+      const difference = target.getTime() - now.getTime();
+      setTimeLeft({
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      });
     };
 
     calculateTime();
