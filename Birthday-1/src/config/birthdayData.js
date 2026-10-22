@@ -11,12 +11,8 @@ import IMG18 from "../Image/18.jpg";
 export const DEFAULT_NAME = "Anindita";
 
 export const BIRTHDAY_CONFIG = {
-  // Target birthday date for countdown (defaulting to today + celebratory milestone or customized)
-  targetDate: new Date(
-    new Date().getFullYear(),
-    new Date().getMonth(),
-    new Date().getDate() + 1,
-  ),
+  // Target birthday date for countdown (October 22).
+  targetDate: new Date(new Date().getFullYear(), 9, 22),
 
   // Opening screen
   opening: {
